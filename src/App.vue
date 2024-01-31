@@ -1,12 +1,19 @@
 <script>
+import AppTitle from './components/AppTitle.vue'
 export default {
-  name: 'MyApp'
-  //logica
+  name: 'MyApp',
+  data: () => ({
+    name: 'Primo Esercizio'
+  }),
+  components: {
+    AppTitle
+  }
+
 }
 </script>
 
 <template>
-  <h1>Prova</h1>
+  <AppTitle />
 </template>
 
 <style></style>
